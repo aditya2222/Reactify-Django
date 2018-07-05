@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import cookie from "react-cookies";
 import 'whatwg-fetch'
+import moment from 'moment'
 
 class PostCreate extends Component {
 
@@ -10,7 +11,7 @@ class PostCreate extends Component {
             draft: false,
             title: null,
             content: null,
-            public: null,
+            publish: null,
         }
 
     }
@@ -87,32 +88,38 @@ class PostCreate extends Component {
         })
     }
 
-    clearForm = () => {
-
+    clearForm = (event) => {
+        if (event) {
+            event.preventDefault()
+        }
         this.postCreateForm.reset()
 
     }
 
+    // We can clear form refrends too by using something like this.refName.current = ''
+
 
     componentDidMount() {
-        this.state = {
+        this.setState({
             draft: false,
             title: null,
             content: null,
-            public: null,
-        }
+            publish: moment(new Date()).format('YYYY-MM-DD'),
+        })
         this.postTitleRef.focus()
 
 
     }
 
     render() {
+        const {publish} = this.state
         return (
             <form onSubmit={this.handleSubmit} ref={(el) => this.postCreateForm = el}>
 
                 <div className='form-group'>
                     <label for='title'>Post Title</label>
-                    <input type='text' ref={(el) => this.postTitleRef = el} id='title' name='title' className='form-control' placeholder='Blog Post Title'
+                    <input type='text' ref={(el) => this.postTitleRef = el} id='title' name='title'
+                           className='form-control' placeholder='Blog Post Title'
                            onChange={this.handleInputChange} required='required'/>
 
                 </div>
@@ -129,7 +136,7 @@ class PostCreate extends Component {
                 <div className='form-group'>
                     <label for='publish'>Publish Date</label>
                     <input type='date' id='publish' name='publish' className='form-control'
-                           onChange={this.handleInputChange} required='required'/>
+                           onChange={this.handleInputChange} value={publish} required='required'/>
 
                 </div>
                 <button className='btn btn-primary'>Save</button>
