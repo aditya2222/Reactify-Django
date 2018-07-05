@@ -32,12 +32,11 @@ class PostCreate extends Component {
                 credentials: 'include'
             }
 
-
             fetch(endpoint, lookupOptions)
                 .then(function (response) {
                     return response.json()
                 }).then(function (responseData) {
-                console.log(responseData) //this is actually the posts
+                console.log(responseData) //this is actually the posts content
                 if (thisComp.props.newPostItemCreated) {
                     thisComp.props.newPostItemCreated(responseData)
                 }
