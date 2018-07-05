@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de381ba2-6fd9-4430-9a1d-3a355bcdff38" name="Default" comment="">
+    <list default="true" id="de381ba2-6fd9-4430-9a1d-3a355bcdff38" name="Default" comment="second commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reactify-ui/src/Posts/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/src/Posts/Posts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/staticfiles/js/reactify-django.ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/staticfiles/js/reactify-django.ui.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="Posts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/Posts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="134" column="73" selection-start-line="134" selection-start-column="73" selection-end-line="134" selection-end-column="73" />
+            <state relative-caret-position="90">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -39,8 +40,11 @@
       <file leaf-file-name="PostCreate.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="135">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,6 +166,14 @@
       <option name="presentableId" value="Default" />
       <updated>1530706157272</updated>
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1530783551536</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530783551536</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -174,8 +186,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32910052" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959481" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32910052" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959481" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -196,6 +208,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/App.js">
@@ -242,16 +258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/Posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="134" column="73" selection-start-line="134" selection-start-column="73" selection-end-line="134" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -259,10 +265,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/Posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

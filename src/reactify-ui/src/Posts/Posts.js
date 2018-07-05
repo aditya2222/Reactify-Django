@@ -43,42 +43,7 @@ class Posts extends Component {
     }
 
 
-    createPost = () => {
-        const csrfToken = cookie.load('csrftoken')
-        const endpoint = '/api/posts' // On a live server we will use a live url such as https://www.adiflashinfotech.com/api/posts
-        let data = {
-            "slug": "",
-            "title": "",
-            "content": "",
-            "draft": false,
-            "publish": null
-        }
-        if (csrfToken !== undefined) {
-            let lookupOptions = {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRFToken': csrfToken
 
-                },
-                body: JSON.stringify(data),
-                credentials: 'include'
-            }
-
-
-            fetch(endpoint, lookupOptions)
-                .then(function (response) {
-                    return response.json()
-                }).then(function (responseData) {
-                console.log(responseData) //this is actually the posts
-            }).catch(function (error) {
-                console.log('error', error)
-            })
-
-
-        }
-
-    }
 
 
     togglePostListClass = (event) => { //the fat arrow method introduced in es6 allows us to use this without calling the function in the constructor and further binding to this
