@@ -46,7 +46,7 @@ class Posts extends Component {
 
         console.log(postItemData)
         let currentPosts = this.state.posts
-        currentPosts.push(postItemData) // unshift cal also be used to prepend data
+        currentPosts.unshift(postItemData) // unshift is used to prepend data as push appends the data
         this.setState({
             posts: currentPosts
         })
