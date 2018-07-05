@@ -12,6 +12,7 @@ class PostCreate extends Component {
             content: null,
             public: null,
         }
+
     }
 
     // Post Create
@@ -40,6 +41,7 @@ class PostCreate extends Component {
                 if (thisComp.props.newPostItemCreated) {
                     thisComp.props.newPostItemCreated(responseData)
                 }
+                thisComp.clearForm()
             }).catch(function (error) {
                 console.log('error', error)
                 alert("An error occured. Please Try Again Later!")
@@ -85,6 +87,13 @@ class PostCreate extends Component {
         })
     }
 
+    clearForm = () => {
+
+        this.postCreateForm.reset()
+
+    }
+
+
     componentDidMount() {
         this.state = {
             draft: false,
@@ -92,17 +101,18 @@ class PostCreate extends Component {
             content: null,
             public: null,
         }
+        this.postTitleRef.focus()
 
 
     }
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} ref={(el) => this.postCreateForm = el}>
 
                 <div className='form-group'>
                     <label for='title'>Post Title</label>
-                    <input type='text' id='title' name='title' className='form-control' placeholder='Blog Post Title'
+                    <input type='text' ref={(el) => this.postTitleRef = el} id='title' name='title' className='form-control' placeholder='Blog Post Title'
                            onChange={this.handleInputChange} required='required'/>
 
                 </div>
@@ -123,6 +133,7 @@ class PostCreate extends Component {
 
                 </div>
                 <button className='btn btn-primary'>Save</button>
+                <button className='btn btn-secondary' onClick={this.clearForm}>Cancel</button>
 
             </form>
 
