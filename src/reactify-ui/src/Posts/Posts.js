@@ -42,8 +42,16 @@ class Posts extends Component {
         })
     }
 
+    handleNewPost = (postItemData) => {
 
+        console.log(postItemData)
+        let currentPosts = this.state.posts
+        currentPosts.push(postItemData) // unshift cal also be used to prepend data
+        this.setState({
+            posts: currentPosts
+        })
 
+    }
 
 
     togglePostListClass = (event) => { //the fat arrow method introduced in es6 allows us to use this without calling the function in the constructor and further binding to this
@@ -100,7 +108,7 @@ class Posts extends Component {
                 {/*thi is just to make sure that there is a csrf token*/}
                 {(csrfToken !== undefined && csrfToken != null) ?
                     <div className='my-5'>
-                        <PostCreate/>
+                        <PostCreate newPostItemCreated={this.handleNewPost}/>
                     </div> : " "
                 }
 

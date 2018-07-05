@@ -6,7 +6,6 @@ class PostCreate extends Component {
 
     constructor(props) {
         super(props)
-
         this.state = {
             draft: false,
             title: null,
@@ -20,6 +19,7 @@ class PostCreate extends Component {
     createPost = (data) => {
         const csrfToken = cookie.load('csrftoken')
         const endpoint = '/api/posts/'  // On a live server we will use a live url such as https://www.adiflashinfotech.com/api/posts
+        let thisComp = this
         if (csrfToken !== undefined) {
             let lookupOptions = {
                 method: 'POST',
@@ -38,8 +38,12 @@ class PostCreate extends Component {
                     return response.json()
                 }).then(function (responseData) {
                 console.log(responseData) //this is actually the posts
+                if (thisComp.props.newPostItemCreated) {
+                    thisComp.props.newPostItemCreated(responseData)
+                }
             }).catch(function (error) {
                 console.log('error', error)
+                alert("An error occured. Please Try Again Later!")
             })
 
 
