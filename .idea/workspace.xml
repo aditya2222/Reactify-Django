@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de381ba2-6fd9-4430-9a1d-3a355bcdff38" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/pip-selfcheck.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reactify-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reactify-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reactify-ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reactify-ui/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reactify/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/staticfiles/js/reactify-django.ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/staticfiles/js/reactify-django.ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/react.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/react.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +39,8 @@
       <file leaf-file-name="PostCreate.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="330">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -57,6 +51,7 @@
     <findStrings>
       <find>asdadsad</find>
       <find>handleSubmit</find>
+      <find>bin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,6 +137,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -178,8 +174,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32910052" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959481" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32910052" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959481" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -256,10 +252,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="30" column="3" selection-start-line="30" selection-end-line="30" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="330">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>

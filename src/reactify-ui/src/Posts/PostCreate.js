@@ -2,12 +2,23 @@ import React, {Component} from 'react'
 
 class PostCreate extends Component {
 
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            draft: false,
+            title: null,
+            content: null,
+            public: null,
+        }
+    }
+
     //Form Handling
 
     handleSubmit = (event) => {
         //Preventing the default submit action of the form such as refresh on button click so that we can implement our own methods
         event.preventDefault()
-        console.log(this.state)
+        // console.log(this.state)
         let data = this.state
         if (data['draft'] === 'on') {
             data['draft'] = true
@@ -15,7 +26,7 @@ class PostCreate extends Component {
             data['draft'] = false
 
         }
-        console.log(data)
+        // console.log(data)
 
 
     }
@@ -23,12 +34,28 @@ class PostCreate extends Component {
     handleInputChange = (event) => {
         event.preventDefault()
         console.log(event.target.name, event.target.value)
-        let key = event.target.key
-        let value  = event.target.value
+        let key = event.target.name
+        let value = event.target.value
+        if (key == 'title') {
+            if (value.length > 120) {
+                alert("this title is tooo long!")
+            }
+        }
         this.setState({
             // block [] specifies key in the key-value pair
-            [event.target.name]: event.target.value,
+            [key]: value,
         })
+    }
+
+    componentDidMount() {
+        this.state = {
+            draft: false,
+            title: null,
+            content: null,
+            public: null,
+        }
+
+
     }
 
     render() {
