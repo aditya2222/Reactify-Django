@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-cookies": "^0.1.0",
+    "react-dom": "^16.4.0",
+    "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
     "react-scripts": "1.1.4",
@@ -25,6 +27,6 @@
     "copy-build-logo": "copyfiles -f 'build/static/media/*' '../staticfiles/img/'",
     "copy-build-js": "copyfiles -f 'build/static/js/*.js' '../staticfiles/js/'",
     "copy-build-css": "copyfiles -f 'build/static/css/*.css' '../staticfiles/css/'",
-    "collectstatic": "python ../manage.py collectstatic --no-input"
+    "collectstatic": "python3 ../manage.py collectstatic --no-input"
   }
 }

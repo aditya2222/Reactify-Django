@@ -10,35 +10,37 @@ from .models import Post
 User = get_user_model()
 
 
+
+
 class UserPublicSerializer(serializers.ModelSerializer):
     username = serializers.CharField(required=False, allow_blank=True, read_only=True)
     class Meta:
         model = User
         fields = [
-            'username',  
-            'first_name',
-            'last_name',
-            ]
-    
+        'username',  
+        'first_name',
+        'last_name',
+        ]
+
 
 class PostSerializer(serializers.ModelSerializer):
     url             = serializers.HyperlinkedIdentityField(
-                            view_name='posts-api:detail',
-                            lookup_field='slug'
-                            )
+        view_name='posts-api:detail',
+        lookup_field='slug'
+        )
     user            = UserPublicSerializer(read_only=True)
     publish         = serializers.DateField(default=timezone.now())
-    
+
     class Meta:
         model = Post
         fields = [
-            'url',
-            'slug',
-            'user',
-            'title',
-            'content',
-            'draft',
-            'publish',
-            'updated',
-            'timestamp',
+        'url',
+        'slug',
+        'user',
+        'title',
+        'content',
+        'draft',
+        'publish',
+        'updated',
+        'timestamp',
         ]
