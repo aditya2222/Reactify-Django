@@ -100,7 +100,7 @@ class Posts extends Component {
                 {posts.length > 0 ? posts.map((postItem, index) => {
 
                     return (
-                        <PostInline Post={postItem} elClass={postsListClass}/> //here we pass props
+                        <PostInline post={postItem} elClass={postsListClass}/> //here we pass props
                     )
 
 
