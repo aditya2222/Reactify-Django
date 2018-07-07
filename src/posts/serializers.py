@@ -30,6 +30,7 @@ class PostSerializer(serializers.ModelSerializer):
         )
     user            = UserPublicSerializer(read_only=True)
     publish         = serializers.DateField(default=timezone.now())
+    owner           = serializers.SerializerMethodField(read_only=True)
 
     class Meta:
         model = Post
@@ -42,5 +43,21 @@ class PostSerializer(serializers.ModelSerializer):
         'draft',
         'publish',
         'updated',
+        'owner',
         'timestamp',
         ]
+
+    def get_owner(self, obj):
+        request = self.context['request']
+        if request.user.is_authenticated:
+            if obj.user == request.user:
+                return True
+        return False
+
+
+
+
+
+
+
+

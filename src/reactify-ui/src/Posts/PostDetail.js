@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import 	{Link} from 'react-router-dom'
-
-
+import 'whatwg-fetch'
+import cookie from "react-cookies";
+import PostUpdate from './PostUpdate'
 
 class PostDetail extends Component{
 
@@ -32,34 +33,39 @@ class PostDetail extends Component{
 			}
 		}
 
+		const csrfToken = cookie.load('csrftoken')
+		if (csrfToken !== undefined) {
+			lookupOptions['credentials'] = 'include'
+			lookupOptions['headers']['X-CSRFToken'] = csrfToken }
+		
 		fetch(endpoint, lookupOptions)
 			.then(function (response) {
 				if(response.status == 404){
-				console.log("Not Found")	
+					console.log("Not Found")	
 				}
 				return response.json()
 			}).then(function (responseData) {
 				console.log(responseData)
 				if(responseData.detail){
-								
-				thisComp.setState({
 
-					doneLoading: true,
-					post: null // It is a key-value pair where posts is the key and responseData is the value
+					thisComp.setState({
 
-				})
-				
-				
+						doneLoading: true,
+						post: null // It is a key-value pair where posts is the key and responseData is the value
+
+					})
+
+
 				}
 				else{
-				
-				thisComp.setState({
 
-					doneLoading: true,
-					post: responseData // It is a key-value pair where posts is the key and responseData is the value
+					thisComp.setState({
 
-				})
-				
+						doneLoading: true,
+						post: responseData // It is a key-value pair where posts is the key and responseData is the value
+
+					})
+
 				}
 
 			}).catch(function (error) {
@@ -110,6 +116,7 @@ class PostDetail extends Component{
 
 
 					}}>Posts</Link></p>
+					{post.owner === true ? <PostUpdate post={post}/>:"You are not the owner of the post"   }
 					</div>
 
 

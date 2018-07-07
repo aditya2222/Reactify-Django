@@ -3,7 +3,7 @@ import cookie from "react-cookies";
 import 'whatwg-fetch'
 import moment from 'moment'
 
-class PostCreate extends Component {
+class PostUpdate extends Component {
 
 	constructor(props) {
 		super(props)
@@ -18,13 +18,13 @@ class PostCreate extends Component {
 
 	// Post Create
 
-	createPost = (data) => {
+	updatePost = (data) => {
 		const endpoint = '/api/posts/'  // On a live server we will use a live url such as https://www.adiflashinfotech.com/api/posts	
 		const csrfToken = cookie.load('csrftoken')
 		let thisComp = this
 		if (csrfToken !== undefined) {
 			let lookupOptions = {
-				method: 'POST',
+				method: 'PUT',
 				headers: {
 					'Content-Type': 'application/json',
 					'X-CSRFToken': csrfToken
@@ -152,4 +152,4 @@ class PostCreate extends Component {
 	}
 }
 
-export default PostCreate
+export default PostUpdate
