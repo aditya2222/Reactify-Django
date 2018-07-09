@@ -1,5 +1,23 @@
-//Left for reference (This component is no longer required)
+import React, {Component} from 'react'
+import PostForm from './PostForm'
 
+class PostCreate extends Component {
+
+    render() {
+
+        return (
+
+            <div>
+                <h1>Create Post</h1>
+                <PostForm/>
+            </div>
+        )
+
+    }
+
+
+}
+export default PostCreate
 
 // import React, {Component} from 'react'
 // import cookie from "react-cookies";

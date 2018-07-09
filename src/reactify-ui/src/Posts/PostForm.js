@@ -3,7 +3,8 @@ import cookie from "react-cookies";
 import 'whatwg-fetch'
 import moment from 'moment'
 
-class PostUpdate extends Component {
+
+class PostForm extends Component {
 
     constructor(props) {
         super(props)
@@ -79,6 +80,7 @@ class PostUpdate extends Component {
                 if (thisComp.props.postItemUpdated) {
                     thisComp.props.postItemUpdated(responseData)
                 }
+                thisComp.clearForm()
             }).catch(function (error) {
                 console.warn('error', error)
                 alert("An error occured. Please Try Again Later!")
@@ -214,8 +216,8 @@ class PostUpdate extends Component {
 
                 </div>
                 <button className='btn btn-primary'>Save</button>
-                <button className={`btn btn-secondary ${cancelClass}`}
-                        onClick={this.clearForm}>Cancel
+                <button className={`btn btn-secondary`}
+                        onClick={this.clearForm}>Clear
                 </button>
 
             </form>
@@ -224,4 +226,4 @@ class PostUpdate extends Component {
     }
 }
 
-export default PostUpdate
+export default PostForm

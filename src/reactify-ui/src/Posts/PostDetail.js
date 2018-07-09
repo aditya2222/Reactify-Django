@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import 'whatwg-fetch'
 import cookie from "react-cookies";
-import PostUpdate from './PostUpdate'
+import PostForm from './PostForm'
 
 class PostDetail extends Component {
 
@@ -127,10 +127,19 @@ class PostDetail extends Component {
                             state: {fromDashboard: false},
 
 
-                        }}>Posts</Link></p>
+                        }}>Posts</Link>
+
+                            <Link maintainScrollPosiiton={false} to={{
+                                pathname: '/posts/create/',
+                                state: {fromDashboard: false},
+
+
+                            }}>Create Post</Link>
+
+                        </p>
                         {post.owner === true ?
-                            <PostUpdate post={post}
-                                        postItemUpdated={this.handlePostItemUpdated}/> : "You are not the owner of the post"}
+                            <PostForm post={post}
+                                      postItemUpdated={this.handlePostItemUpdated}/> : "You are not the owner of the post"}
                     </div>
 
 
