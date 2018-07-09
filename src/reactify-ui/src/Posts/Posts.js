@@ -8,14 +8,19 @@ import PostCreate from './PostCreate'
 class Posts extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            posts: [],
+            postsListClass: "card",
+            next: null,
+            previous: null,
+            author: false,
+            count: 0
+
+
+        }
     }
 
-    state = {
-        posts: [],
-        postsListClass: "card"
 
-
-    }
     loadPosts = () => {
         const endpoint = '/api/posts' // On a live server we will use a live url such as https://www.adiflashinfotech.com/api/posts
         let thisComp = this
@@ -35,7 +40,11 @@ class Posts extends Component {
 
             thisComp.setState({
 
-                posts: responseData // It is a key-value pair where posts is the key and responseData is the value
+                posts: responseData.results,
+                next: responseData.next,
+                previous: responseData.previous,
+                author: responseData.author,
+                count: responseData.count
 
             })
         }).catch(function (error) {
@@ -85,7 +94,11 @@ class Posts extends Component {
         this.loadPosts()
         this.setState({
             posts: [],
-            postsListClass: "card"
+            postsListClass: "card",
+            next: null,
+            previous: null,
+            author: false,
+            count: 0
 
         })
     }
@@ -94,6 +107,7 @@ class Posts extends Component {
         const csrfToken = cookie.load('csrftoken')
         const {posts} = this.state
         const {postsListClass} = this.state
+        const {author} = this.state
         return (
             <div>
                 <h1> Hello World! </h1>
