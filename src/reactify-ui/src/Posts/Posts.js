@@ -3,6 +3,7 @@ import 'whatwg-fetch'
 import cookie from 'react-cookies'
 import PostInline from './PostInline'
 import PostCreate from './PostCreate'
+import PostUpdate from './PostUpdate'
 
 class Posts extends Component {
     constructor(props) {
@@ -108,7 +109,7 @@ class Posts extends Component {
                 {/*thi is just to make sure that there is a csrf token*/}
                 {(csrfToken !== undefined && csrfToken != null) ?
                     <div className='my-5'>
-                        <PostCreate newPostItemCreated={this.handleNewPost}/>
+                        <PostUpdate newPostItemCreated={this.handleNewPost}/>
                     </div> : " "
                 }
 

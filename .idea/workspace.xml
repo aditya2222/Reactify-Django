@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="de381ba2-6fd9-4430-9a1d-3a355bcdff38" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reactify-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reactify-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reactify-ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostUpdate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reactify-ui/src/Posts/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reactify-ui/src/Posts/Posts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/staticfiles/js/reactify-django.ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/staticfiles/js/reactify-django.ui.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,29 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Posts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/Posts.js">
+      <file leaf-file-name="PostUpdate.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostUpdate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315">
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostInline.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostInline.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostCreate.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="107" column="10" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
+            <state relative-caret-position="452">
+              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -55,6 +40,14 @@
       <find>handleSubmit</find>
       <find>bin</find>
       <find>thisCom</find>
+      <find>console.log</find>
+      <find>asdasd</find>
+      <find>className</find>
+      <find>PostUpdate</find>
+      <find>newPostItemCreated</find>
+      <find>clearform</find>
+      <find>clearForm</find>
+      <find>postCreateForm</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -63,10 +56,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/reactify-ui/src/App.js" />
         <option value="$PROJECT_DIR$/src/reactify-ui/src/index.js" />
+        <option value="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostDetail.js" />
         <option value="$PROJECT_DIR$/src/reactify-ui/src/Posts/Posts.js" />
         <option value="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js" />
+        <option value="$PROJECT_DIR$/src/reactify-ui/src/App.js" />
+        <option value="$PROJECT_DIR$/src/reactify-ui/src/Posts/PostUpdate.js" />
       </list>
     </option>
   </component>
@@ -140,7 +135,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -207,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530792490138</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Prefill Commit">
+      <created>1530803223916</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1530803223916</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -220,7 +222,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32910052" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33439153" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959481" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
@@ -250,9 +252,46 @@
     <MESSAGE value="child and parent communicating commit" />
     <MESSAGE value="Prepend Posts Commit" />
     <MESSAGE value="form clear commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="form clear commit" />
+    <MESSAGE value="Prefill Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prefill Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostUpdate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/Posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostInline.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="138" column="75" selection-start-line="138" selection-start-column="68" selection-end-line="138" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -270,23 +309,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -307,24 +333,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtime.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/Posts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="306">
+          <caret line="107" column="43" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostInline.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="315">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="132" column="83" selection-start-line="132" selection-start-column="83" selection-end-line="132" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostCreate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="107" column="10" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reactify-ui/src/Posts/PostUpdate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
