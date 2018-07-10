@@ -7,18 +7,18 @@ import PostCreate from './Posts/PostCreate'
 import './App.css'
 
 class App extends Component {
-    render() {
-        return (
-            <BrowserRouter>
-                <Switch>
-                    <Route exact path='/posts/create' component={PostCreate}/>
-                    <Route exact path='/posts' component={Posts}/>
-                    <Route exact path='/posts/:slug' component={PostDetail}/>
-                    <Route component={Posts}/>
-                </Switch>
-            </BrowserRouter>
-        )
-    }
+  render () {
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/posts/create' component={PostCreate} />
+          <Route exact path='/posts' component={Posts} />
+          <Route exact path='/posts/:slug' component={PostDetail} />
+          <Route component={Posts} />
+        </Switch>
+      </BrowserRouter>
+    )
+  }
 }
 
 export default App
