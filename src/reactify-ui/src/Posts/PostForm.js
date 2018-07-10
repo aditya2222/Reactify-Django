@@ -38,19 +38,14 @@ class PostForm extends Component {
 				.then(function (response) {
 					return response.json()
 				}).then(function (responseData) {
-					console.log(responseData) //this is actually the posts content
-					if (thisComp.props.newPostItemCreated) {
-						thisComp.props.newPostItemCreated(responseData)
-					}
-					thisComp.defaultState()
+					 console.log(responseData) //this is actually the posts content
 					thisComp.clearForm()
 				}).catch(function (error) {
-					console.log('error', error)
+					console.warn('error', error)
 					alert("An error occured. Please Try Again Later!")
 				})
-
-
 		}
+
 
 	}
 
